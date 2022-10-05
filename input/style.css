@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    font-family: Inter,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  }
+  .humberger{
+    @apply pt-1 pl-4 text-2xl block xl:hidden cursor-pointer;
+  }
+
+.nav-item{
+    @apply py-4 px-4 text-shuvoit-text text-base font-medium;
+}
+.page-item{
+  @apply py-2 px-4 text-shuvoit-text text-base font-medium;
+}
+.active{
+    @apply rounded-tr-full rounded-br-full cursor-pointer text-white;
+}
+.search{
+  @apply rounded-full border-gray-400 pl-8 w-full sm:w-80 focus:outline-none h-10;
+}
+.mode-changer{
+  @apply w-8 h-8 flex justify-center items-center ml-3 hover:w-8 hover:h-8 hover:rounded-full hover:bg-gray-300;
+}
+.notification{
+  @apply w-8 h-8 flex justify-center items-center mr-3 hover:w-8 hover:h-8 hover:rounded-full hover:bg-gray-300;
+}
+.account{
+  @apply w-10 h-10 cursor-pointer relative;
+}
+
+
+
+
+  /* Custom Code */
+
+  .nav-header{
+    min-height: 60px;
+  }
+  .bg-shuvoit-shadow{
+    box-shadow: 0px 4px 8px -4px rgba(58, 53, 65, 0.42);
+    background-image: linear-gradient(98deg, #C6A7FE, #9155FD 94%);
+  }
+  .search{
+    border: 1px solid gray;
+    background-color: unset;
+  }
