@@ -3,19 +3,19 @@
 @tailwind utilities;
 body {
     font-family: Inter,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  }
-  .humberger{
-    @apply pt-1 pl-4 text-2xl block xl:hidden cursor-pointer;
-  }
+}
+.humberger{
+  @apply w-24 h-12 ml-6 mt-5 text-2xl xl:hidden cursor-pointer;
+}
 
 .nav-item{
-    @apply py-4 px-4 text-shuvoit-text text-base font-medium;
+  @apply py-2 px-4 text-shuvoit-text text-base font-medium cursor-pointer hover:bg-gray-300 hover:rounded-tr-full hover:rounded-br-full;
 }
 .page-item{
-  @apply py-2 px-4 text-shuvoit-text text-base font-medium;
+  @apply py-2 px-4 text-shuvoit-text text-base font-medium cursor-pointer hover:bg-gray-300 hover:rounded-tr-full hover:rounded-br-full;
 }
 .active{
-    @apply rounded-tr-full rounded-br-full cursor-pointer text-white;
+  @apply rounded-tr-full rounded-br-full cursor-pointer text-white;
 }
 .search{
   @apply rounded-full border-gray-400 pl-8 w-full sm:w-80 focus:outline-none h-10;
@@ -30,6 +30,33 @@ body {
   @apply w-10 h-10 cursor-pointer relative;
 }
 
+.dashboard-content{
+  @apply absolute left-5 flex justify-between gap-4 mt-5;
+}
+.panel-body{
+  @apply bg-white p-4 shadow w-4/12 h-fit flex justify-between relative rounded;
+}
+.box-heading{
+  @apply text-xl font-medium text-shuvoit-text;
+}
+.sub-heading{
+  @apply text-base font-medium text-shuvoit-text py-2;
+}
+.amount{
+  @apply text-btn text-2xl font-bold py-3;
+}
+.btn-customized{
+  @apply bg-btn text-white px-4 py-1 rounded shadow-sm;
+}
+
+
+/* Footer Section */
+.footer{
+  @apply absolute left-5 bottom-0 flex justify-between;
+}
+.copyright{
+  @apply p-5 text-center;
+}
 
 
 
@@ -46,3 +73,49 @@ body {
     border: 1px solid gray;
     background-color: unset;
   }
+
+  @media (max-width: 1279px) {
+    .isActive{
+    display: block !important;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+    }
+  .sidebar-wrapper{
+    width: 273px !important;
+    height: 100vh;
+    z-index: 12;
+    transform: translateX(-100%);
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+  }
+  .wrapper-humberger {
+    width: 273px;
+  }
+}
+.isActive{
+  display: block;
+  transform: translateX(0);
+}
+.footer{
+  width: 75%;
+}
+
+
+.bg-image{
+  background-image: url(../img/icon/triangle-light.png);
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1279px) {
+  .dashboard-content{
+    width: 100% !important;
+    position: unset;
+    left: unset;
+  }
+  .footer{
+    position: unset;
+    left: unset;
+  }
+}

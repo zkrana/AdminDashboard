@@ -5,17 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shuvo IT : Dashboard</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body class=" bg-shuvoit-bg">
     <div class="root flex justify-between">
-        <div class="sidebar-wrapper w-1/12 xl:w-2/12 py-4">
-
-            <i class="fa-solid fa-bars humberger"></i>
-
-            <div class="wrapper-humberger hidden xl:block">
+        <div class="sidebar-wrapper hidden xl:block w-1/12 xl:w-2/12 py-4">
+            <div class="wrapper-humberger">
                 <div class="nav-header flex justify-start px-5">
                     <svg width="30" height="25" version="1.1" viewBox="0 0 30 23" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -56,7 +55,7 @@
                             <i class="fa-solid fa-house-user w-5"></i> <span class=" ml-1">Dashboard</span>
                         </li>
                         <li class="nav-item">
-                            <i class="fa-solid fa-gear w-5"></i>  <span class=" ml-1">Account Settings</span>
+                            <i class="fa-solid fa-gear w-5"></i> <span class=" ml-1">Account Settings</span>
                         </li>
                     </ul>
                 </nav>
@@ -102,8 +101,29 @@
                         </ul>
                     </nav>
                 </div>
+                <div class="user-interfaces h-full mt-5">
+                    <span class="w-full h-1 bg-gray-300">
+                        <p class="pl-7 mb-5 text-sm text-gray-400">- &nbsp; Actions</p>
+                    </span>
+                    <nav class="relative bottom-0 left-0 w-full">
+                        <ul class="">
+                            <li class="page-item">
+                                <i class="fa-solid fa-font w-5"></i> <span class=" ml-1">User Account</span>
+                            </li>
+                            <li class="page-item">
+                                <i class="fa-solid fa-icons w-5"></i> <span class=" ml-1">Logout</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
+
+        <!-- Humberger Menu Icon -->
+        <div class="home-content humberger">
+            <i class="fa-solid fa-bars myBtn "></i>
+        </div>
+
         <div class="main-content-wrapper w-11/12 xl:w-10/12 xl:mr-28 px-8">
             <div class="header-nav flex">
                 <div class="search-box w-1/2 py-4 relative">
@@ -147,8 +167,49 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Content body -->
+            <div class="dashboard-content">
+                <div class="welcome-panel panel-body bg-image">
+                    <div class="welcome-content">
+                        <h6 class="box-heading">Congratulations John! 🥳</h6>
+                        <p class="sub-heading">Best seller of the month</p>
+                        <h5 class="amount">$42.8k</h5>
+                        <button class="btn-customized" type="button">View Sales</button>
+                    </div>
+                    <img src="img/icon/trophy.png" class="w-20 h-24 absolute bottom-4 right-4">
+                </div>
+    
+                <div class="p-4 shadow w-8/12 rounded bg-white">
+                    <div class="">
+    
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Part -->
+            <footer class="footer">
+                <div class="copyright">
+                    <p class="">© 2022, Made with <span class="">❤️</span> by <a class="" target="_blank" href="https://shuvoit.com/">Shuvo IT</a></p>
+                </div>
+                <div class="copyright">
+                    <p class="">Admin Dashboard</p>
+                </div>
+            </footer>
+
         </div>
     </div>
+
+
+    <script>
+        var element = document.querySelector(".sidebar-wrapper");
+        var btn = document.querySelector(".myBtn")
+        btn.addEventListener('click',(e)=>{
+            element.classList.toggle("isActive");
+
+        });
+
+    </script>
+
 </body>
 
 </html>
