@@ -20,6 +20,10 @@ module.exports = {
         'shuvoit-shadow': 'linear-gradient(98deg, #C6A7FE, #9155FD 94%)',
         'shuvoit-text':'rgba(58, 53, 65, 0.87)',
         'btn':'#9155FD',
+        'shuvoit-secondary':'rgba(58, 53, 65, 0.68)',
+        'shuvoit-secondary':'#56CA00',
+        'shuvoit-optional':'#FFB400',
+        'shuvoit-lightGreen':'#16B1FF',
       },
     },
     container: {

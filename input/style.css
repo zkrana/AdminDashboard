@@ -31,10 +31,28 @@ body {
 }
 
 .dashboard-content{
-  @apply absolute left-5 flex justify-between gap-4 mt-5;
+  @apply absolute flex-col sm:flex-row left-5 right-5 flex justify-between flex-wrap gap-4 mt-5;
 }
 .panel-body{
-  @apply bg-white p-4 shadow w-4/12 h-fit flex justify-between relative rounded;
+  @apply bg-white p-4 shadow w-full lg:w-4/12 h-fit flex justify-between relative rounded;
+}
+.statistic-panel{
+  @apply p-4 shadow w-full rounded bg-white;
+}
+.card-body{
+  @apply w-full h-full;
+}
+.upper-content{
+  @apply pb-4;
+}
+.lower-content{
+  @apply pt-8;
+}
+.upperFlex{
+  @apply w-full flex justify-between;
+}
+.settings{
+  @apply w-7 h-7 text-shuvoit-secondary rounded-lg hover:rounded-full hover:bg-shuvoit-bg;
 }
 .box-heading{
   @apply text-xl font-medium text-shuvoit-text;
@@ -42,13 +60,49 @@ body {
 .sub-heading{
   @apply text-base font-medium text-shuvoit-text py-2;
 }
+.second-sub-heading{
+  @apply text-sm text-gray-400;
+}
 .amount{
   @apply text-btn text-2xl font-bold py-3;
 }
 .btn-customized{
-  @apply bg-btn text-white px-4 py-1 rounded shadow-sm;
+  @apply bg-btn text-sm font-bold text-white uppercase px-4 py-1 rounded shadow-sm;
+}
+.earning-panel{
+  @apply w-full flex justify-between flex-col sm:flex-row rounded gap-4;
+}
+.earning-icon{
+  @apply w-2/12 h-10 bg-shuvoit-bg flex justify-center items-center rounded;
+}
+.earning-text-box{
+  @apply w-10/12 flex justify-between items-center pl-3;
+}
+.progress-back-layer{
+  @apply relative overflow-hidden block h-1 z-0 bg-purple-200;
+}
+.progress-front-layer{
+  @apply absolute w-full left-0 bottom-0 top-0 translate-x-3 transform bg-purple-600;
+}
+.earning-card{
+  @apply flex justify-between items-center mt-4;
+}
+.statistics-box-wrapper{
+  @apply w-full sm:w-1/4 mb-4 sm:mb-0;
+}
+.chart{
+  @apply w-full mt-5;
 }
 
+.width{
+  @apply bg-white h-48 p-4 shadow rounded;
+}
+.square-data{
+  @apply text-white w-11 h-11 flex justify-center items-center rounded shadow;
+}
+.circle-data{
+  @apply text-white w-11 h-11 flex justify-center items-center rounded-full shadow;
+}
 
 /* Footer Section */
 .footer{
@@ -118,4 +172,13 @@ body {
     position: unset;
     left: unset;
   }
+}
+@media (min-width: 1024px){
+.lg\:w-8\/12 {
+  width: 64.667% !important;
+}
+}
+
+.width{
+  width: 47.5%;
 }
