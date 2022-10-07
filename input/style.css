@@ -182,3 +182,8 @@ body {
 .width{
   width: 47.5%;
 }
+@media (max-width:500px) {
+  .width{
+    width: 47%;
+  }
+}
