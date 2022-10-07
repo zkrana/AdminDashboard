@@ -187,3 +187,8 @@ body {
     width: 47%;
   }
 }
+@media (max-width:370px) {
+  .width{
+    width: 46.5%;
+  }
+}
