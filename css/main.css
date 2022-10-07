@@ -1416,6 +1416,12 @@ body {
   width: 47.5%;
 }
 
+@media (min-width:1280px) and (max-width:1734px) {
+  .width{
+    width: 46%;
+  }
+}
+
 @media (max-width:500px) {
   .width{
     width: 47%;
