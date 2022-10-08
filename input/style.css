@@ -57,11 +57,14 @@ body {
 .box-heading{
   @apply text-xl font-medium text-shuvoit-text;
 }
+.box-heading-st{
+  @apply text-sm font-semibold text-shuvoit-text;
+}
 .sub-heading{
   @apply text-base font-medium text-shuvoit-text py-2;
 }
 .second-sub-heading{
-  @apply text-sm text-gray-400;
+  @apply text-sm text-gray-500 font-medium;
 }
 .amount{
   @apply text-btn text-2xl font-bold py-3;
@@ -70,19 +73,34 @@ body {
   @apply bg-btn text-sm font-bold text-white uppercase px-4 py-1 rounded shadow-sm;
 }
 .earning-panel{
-  @apply w-full flex justify-between flex-col sm:flex-row rounded gap-4;
+  @apply w-full flex justify-between flex-col md:flex-row gap-6 rounded;
 }
 .earning-icon{
-  @apply w-2/12 h-10 bg-shuvoit-bg flex justify-center items-center rounded;
+  @apply w-1/12 h-10 bg-shuvoit-bg flex justify-center items-center rounded;
 }
 .earning-text-box{
-  @apply w-10/12 flex justify-between items-center pl-3;
+  @apply w-11/12 flex justify-between items-center pl-3;
 }
 .progress-back-layer{
   @apply relative overflow-hidden block h-1 z-0 bg-purple-200;
 }
+.revenue-details{
+  @apply relative w-28;
+}
 .progress-front-layer{
   @apply absolute w-full left-0 bottom-0 top-0 translate-x-3 transform bg-purple-600;
+}
+.bg{
+  @apply bg-sky-200;
+}
+.bg-front{
+  @apply bg-sky-500;
+}
+.bg-aviato{
+@apply bg-gray-200;
+}
+.aviato-front{
+  @apply bg-gray-400;
 }
 .earning-card{
   @apply flex justify-between items-center mt-4;
@@ -103,6 +121,16 @@ body {
 .circle-data{
   @apply text-white w-11 h-11 flex justify-center items-center rounded-full shadow;
 }
+.country-stats{
+  @apply w-full lg:w-4/12 p-4 bg-white shadow flex justify-between;
+}
+.sales-country-data{
+  @apply flex justify-between my-3;
+}
+.depo-width-data{
+  @apply flex justify-between bg-white p-4 shadow gap-3;
+}
+
 
 /* Footer Section */
 .footer{
@@ -182,7 +210,7 @@ body {
 .width{
   width: 47.5%;
 }
-@media (min-width:1280px) and (max-width:1734px) {
+@media (min-width:768px) and (max-width:1750px) {
   .width{
     width: 46%;
   }
@@ -196,4 +224,11 @@ body {
   .width{
     width: 46.5%;
   }
+}
+
+
+/* depo-width-data */
+
+.br{
+  border-left: 1px solid rgba(58, 53, 65, 0.12);
 }
