@@ -660,12 +660,12 @@ video {
   height: 12rem;
 }
 
-.h-7 {
-  height: 1.75rem;
-}
-
 .h-9 {
   height: 2.25rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .h-6 {
@@ -720,8 +720,8 @@ video {
   width: 1.5rem;
 }
 
-.w-7 {
-  width: 1.75rem;
+.w-16 {
+  width: 4rem;
 }
 
 .transform {
@@ -910,14 +910,6 @@ video {
   padding-top: 0.5rem;
 }
 
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pr-3 {
-  padding-right: 0.75rem;
-}
-
 .text-right {
   text-align: right;
 }
@@ -984,6 +976,11 @@ video {
   color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
@@ -1017,6 +1014,12 @@ body {
   .humberger {
     display: none;
   }
+}
+
+.flex-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-item {
@@ -1403,8 +1406,8 @@ body {
 
 .circle-data {
   display: flex;
-  height: 2.75rem;
-  width: 2.75rem;
+  height: 2.5rem;
+  width: 2.5rem;
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
@@ -1434,14 +1437,14 @@ body {
 }
 
 .sales-country-data {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .depo-width-data {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: 0.75rem;
   --tw-bg-opacity: 1;
@@ -1450,6 +1453,12 @@ body {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 640px) {
+  .depo-width-data {
+    flex-direction: row;
+  }
 }
 
 /* Footer Section */
@@ -1567,6 +1576,12 @@ body {
   border-left: 1px solid rgba(58, 53, 65, 0.12);
 }
 
+@media (max-width:640px) {
+  .br{
+    border-left: none;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:block {
     display: block;
@@ -1580,6 +1595,19 @@ body {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
+
+  .sm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .sm\:pl-4 {
+    padding-left: 1rem;
+  }
+
+  .sm\:pr-3 {
+    padding-right: 0.75rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1591,6 +1619,10 @@ body {
 @media (min-width: 1024px) {
   .lg\:w-8\/12 {
     width: 66.666667%;
+  }
+
+  .lg\:w-96 {
+    width: 24rem;
   }
 }
 

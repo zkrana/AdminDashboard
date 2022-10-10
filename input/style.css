@@ -8,6 +8,9 @@ body {
   @apply w-24 h-12 ml-6 mt-5 text-2xl xl:hidden cursor-pointer;
 }
 
+.flex-root{
+  @apply flex justify-center items-center;
+}
 .nav-item{
   @apply py-2 px-4 text-shuvoit-text text-base font-medium cursor-pointer hover:bg-gray-300 hover:rounded-tr-full hover:rounded-br-full;
 }
@@ -119,16 +122,16 @@ body {
   @apply text-white w-11 h-11 flex justify-center items-center rounded shadow;
 }
 .circle-data{
-  @apply text-white w-11 h-11 flex justify-center items-center rounded-full shadow;
+  @apply text-white w-10 h-10 flex justify-center items-center rounded-full shadow;
 }
 .country-stats{
   @apply w-full lg:w-4/12 p-4 bg-white shadow flex justify-between;
 }
 .sales-country-data{
-  @apply flex justify-between my-3;
+  @apply flex justify-between items-center ;
 }
 .depo-width-data{
-  @apply flex justify-between bg-white p-4 shadow gap-3;
+  @apply flex justify-between flex-col sm:flex-row bg-white p-4 shadow gap-3;
 }
 
 
@@ -231,4 +234,9 @@ body {
 
 .br{
   border-left: 1px solid rgba(58, 53, 65, 0.12);
+}
+@media (max-width:640px) {
+  .br{
+    border-left: none;
+  }
 }
