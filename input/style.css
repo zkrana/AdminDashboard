@@ -32,6 +32,9 @@ body {
 .account{
   @apply w-10 h-10 cursor-pointer relative;
 }
+.wrapper-position{
+  @apply fixed top-0 left-0 bottom-0;
+}
 
 .dashboard-content{
   @apply absolute flex-col sm:flex-row left-5 right-5 flex justify-between flex-wrap gap-4 mt-5;
@@ -134,10 +137,14 @@ body {
   @apply flex justify-between flex-col sm:flex-row bg-white p-4 shadow gap-3;
 }
 
+.table-heading{
+  @apply text-base text-gray-600 py-4;
+}
+
 
 /* Footer Section */
 .footer{
-  @apply absolute left-5 bottom-0 flex justify-between;
+  @apply w-full flex justify-between;
 }
 .copyright{
   @apply p-5 text-center;
@@ -164,6 +171,7 @@ body {
     display: block !important;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
+    position: fixed;
     }
   .sidebar-wrapper{
     width: 273px !important;
@@ -173,6 +181,17 @@ body {
     background-color: #fff;
     transition: transform 0.3s ease-in-out;
   }
+  .isActive .home-content{
+    display: flex;
+    width: 100px;
+    justify-content: flex-end;
+    padding-top: 6px;
+    cursor: pointer;
+  }
+  .btn-close {
+    font-size: 20px;
+    height: 20px;
+  }
   .wrapper-humberger {
     width: 273px;
   }
@@ -180,9 +199,6 @@ body {
 .isActive{
   display: block;
   transform: translateX(0);
-}
-.footer{
-  width: 75%;
 }
 
 
@@ -200,6 +216,7 @@ body {
     left: unset;
   }
   .footer{
+    width: 100%;
     position: unset;
     left: unset;
   }
@@ -238,5 +255,11 @@ body {
 @media (max-width:640px) {
   .br{
     border-left: none;
+  }
+}
+
+@media (min-width:1280px) {
+  .main-content-wrapper {
+    margin-left: 300px !important;
   }
 }

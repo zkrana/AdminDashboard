@@ -13,7 +13,7 @@
 
 <body class=" bg-shuvoit-bg">
     <div class="root flex justify-between">
-        <div class="sidebar-wrapper hidden xl:block w-1/12 xl:w-2/12 py-4">
+        <div class="sidebar-wrapper wrapper-position hidden xl:block w-1.5/12 xl:w-2/12 py-4 pr-10">
             <div class="wrapper-humberger">
                 <div class="nav-header flex justify-start px-5">
                     <svg width="30" height="25" version="1.1" viewBox="0 0 30 23" xmlns="http://www.w3.org/2000/svg"
@@ -48,6 +48,9 @@
                         </g>
                     </svg>
                     <h6 class="text-xl font-bold text-gray-700 pl-3 uppercase">Materio</h6>
+                    <div class=" hidden home-content">
+                        <i class="fa-solid fa-xmark btn-close"></i>
+                    </div>
                 </div>
                 <nav class="relative left-0 w-full">
                     <ul class="">
@@ -738,7 +741,8 @@
                                     <span class="second-sub-heading">Sell UI Kit</span>
                                 </div>
                                 <div class="flex justify-start items-start w-16 h-12">
-                                    <svg class=" fill-shuvoit-secondary" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuUpIcon">
+                                    <svg class=" fill-shuvoit-secondary" focusable="false" aria-hidden="true"
+                                        viewBox="0 0 24 24" data-testid="MenuUpIcon">
                                         <path class="w-9 h-11" d="M7,15L12,10L17,15H7Z"></path>
                                     </svg>
                                     <p class="pt-1 text-shuvoit-secondary font-medium">10%</p>
@@ -759,7 +763,8 @@
                                     <span class="second-sub-heading">Sell UI Kit</span>
                                 </div>
                                 <div class="flex justify-start items-start w-16 h-12">
-                                    <svg class=" fill-shuvoit-secondary" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuUpIcon">
+                                    <svg class=" fill-shuvoit-secondary" focusable="false" aria-hidden="true"
+                                        viewBox="0 0 24 24" data-testid="MenuUpIcon">
                                         <path class="w-9 h-11" d="M7,15L12,10L17,15H7Z"></path>
                                     </svg>
                                     <p class="pt-1 text-shuvoit-secondary font-medium">10%</p>
@@ -780,7 +785,8 @@
                                     <span class="second-sub-heading">Sell UI Kit</span>
                                 </div>
                                 <div class="flex justify-start items-start w-16 h-12">
-                                    <svg class=" fill-shuvoit-secondary" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuUpIcon">
+                                    <svg class=" fill-shuvoit-secondary" focusable="false" aria-hidden="true"
+                                        viewBox="0 0 24 24" data-testid="MenuUpIcon">
                                         <path class="w-9 h-11" d="M7,15L12,10L17,15H7Z"></path>
                                     </svg>
                                     <p class="pt-1 text-shuvoit-secondary font-medium">10%</p>
@@ -801,7 +807,8 @@
                                     <span class="second-sub-heading">Sell UI Kit</span>
                                 </div>
                                 <div class="flex justify-start items-start w-16 h-12">
-                                    <svg class=" fill-shuvoit-secondary" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuUpIcon">
+                                    <svg class=" fill-shuvoit-secondary" focusable="false" aria-hidden="true"
+                                        viewBox="0 0 24 24" data-testid="MenuUpIcon">
                                         <path class="w-9 h-11" d="M7,15L12,10L17,15H7Z"></path>
                                     </svg>
                                     <p class="pt-1 text-shuvoit-secondary font-medium">10%</p>
@@ -822,7 +829,8 @@
                                     <span class="second-sub-heading">Sell UI Kit</span>
                                 </div>
                                 <div class="flex justify-start items-start w-16 h-12">
-                                    <svg class=" fill-shuvoit-secondary" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuUpIcon">
+                                    <svg class=" fill-shuvoit-secondary" focusable="false" aria-hidden="true"
+                                        viewBox="0 0 24 24" data-testid="MenuUpIcon">
                                         <path class="w-9 h-11" d="M7,15L12,10L17,15H7Z"></path>
                                     </svg>
                                     <p class="pt-1 text-shuvoit-secondary font-medium">10%</p>
@@ -1015,18 +1023,213 @@
                         </div>
                     </div>
                 </div>
+                <div class="w-full rounded shadow bg-white p-4">
+                    <div class="flex flex-col">
+                        <div class="overflow-x-auto md:overflow-hidden sm:-mx-6 lg:-mx-8">
+                            <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                                <div class="overflow-hidden">
+                                    <table class="table-auto border-separate w-full text-left "
+                                        aria-label="table in dashboard">
+                                        <tr class="table-heading">
+                                            <th class="py-3" scope="col">Name</th>
+                                            <th class="py-3" scope="col">Email</th>
+                                            <th class="py-3" scope="col">Date</th>
+                                            <th class="py-3" scope="col">Salary</th>
+                                            <th class="py-3" scope="col">Age</th>
+                                            <th class="py-3" scope="col">Status</th>
+                                        </tr>
+                                        <tr class="">
+                                            <td class="py-3 md:py-0">
+                                                <div class="w-56 md:w-full">
+                                                    <p class="box-heading-st">Sally Quinn</p>
+                                                    <span class="second-sub-heading">Human
+                                                        Resources Assistant</span>
+                                                </div>
+                                            </td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                eebsworth2m@sbwire.com</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                09/27/2018</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                $19586.23</td>
+                                            <td class="second-sub-heading pt-4 pr-4 md:pr-0">27
+                                            </td>
+                                            <td class="">
+                                                <div class="mt-4">
+                                                    <span class="btn-customized">current</span></div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="">
+                                            <td class="py-3 md:py-0">
+                                                <div class="w-56 md:w-full">
+                                                    <p class="box-heading-st">Sally Quinn</p>
+                                                    <span class="second-sub-heading">Human
+                                                        Resources Assistant</span>
+                                                </div>
+                                            </td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                eebsworth2m@sbwire.com</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                09/27/2018</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                $19586.23</td>
+                                            <td class="second-sub-heading pt-4 pr-4 md:pr-0">27
+                                            </td>
+                                            <td class="">
+                                                <div class="mt-4">
+                                                    <span class="btn-customized">current</span></div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="">
+                                            <td class="py-3 md:py-0">
+                                                <div class="w-56 md:w-full">
+                                                    <p class="box-heading-st">Sally Quinn</p>
+                                                    <span class="second-sub-heading">Human
+                                                        Resources Assistant</span>
+                                                </div>
+                                            </td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                eebsworth2m@sbwire.com</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                09/27/2018</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                $19586.23</td>
+                                            <td class="second-sub-heading pt-4 pr-4 md:pr-0">27
+                                            </td>
+                                            <td class="">
+                                                <div class="mt-4">
+                                                    <span class="btn-customized">current</span></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td class="py-3 md:py-0">
+                                                <div class="w-56 md:w-full">
+                                                    <p class="box-heading-st">Sally Quinn</p>
+                                                    <span class="second-sub-heading">Human
+                                                        Resources Assistant</span>
+                                                </div>
+                                            </td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                eebsworth2m@sbwire.com</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                09/27/2018</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                $19586.23</td>
+                                            <td class="second-sub-heading pt-4 pr-4 md:pr-0">27
+                                            </td>
+                                            <td class="">
+                                                <div class="mt-4">
+                                                    <span class="btn-customized">current</span></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td class="py-3 md:py-0">
+                                                <div class="w-56 md:w-full">
+                                                    <p class="box-heading-st">Sally Quinn</p>
+                                                    <span class="second-sub-heading">Human
+                                                        Resources Assistant</span>
+                                                </div>
+                                            </td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                eebsworth2m@sbwire.com</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                09/27/2018</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                $19586.23</td>
+                                            <td class="second-sub-heading pt-4 pr-4 md:pr-0">27
+                                            </td>
+                                            <td class="">
+                                                <div class="mt-4">
+                                                    <span class="btn-customized">current</span></div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="">
+                                            <td class="py-3 md:py-0">
+                                                <div class="w-56 md:w-full">
+                                                    <p class="box-heading-st">Sally Quinn</p>
+                                                    <span class="second-sub-heading">Human
+                                                        Resources Assistant</span>
+                                                </div>
+                                            </td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                eebsworth2m@sbwire.com</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                09/27/2018</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                $19586.23</td>
+                                            <td class="second-sub-heading pt-4 pr-4 md:pr-0">27
+                                            </td>
+                                            <td class="">
+                                                <div class="mt-4">
+                                                    <span class="btn-customized">current</span></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td class="py-3 md:py-0">
+                                                <div class="w-56 md:w-full">
+                                                    <p class="box-heading-st">Sally Quinn</p>
+                                                    <span class="second-sub-heading">Human
+                                                        Resources Assistant</span>
+                                                </div>
+                                            </td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                eebsworth2m@sbwire.com</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                09/27/2018</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                $19586.23</td>
+                                            <td class="second-sub-heading pt-4 pr-4 md:pr-0">27
+                                            </td>
+                                            <td class="">
+                                                <div class="mt-4">
+                                                    <span class="btn-customized">current</span></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td class="py-3 md:py-0">
+                                                <div class="w-56 md:w-full">
+                                                    <p class="box-heading-st">Sally Quinn</p>
+                                                    <span class="second-sub-heading">Human
+                                                        Resources Assistant</span>
+                                                </div>
+                                            </td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                eebsworth2m@sbwire.com</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                09/27/2018</td>
+                                            <td class="second-sub-heading pt-4 pr-3 md:pr-0">
+                                                $19586.23</td>
+                                            <td class="second-sub-heading pt-4 pr-4 md:pr-0">27
+                                            </td>
+                                            <td class="">
+                                                <div class="mt-4">
+                                                    <span class="btn-customized">current</span></div>
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Part -->
+                <footer class="footer">
+                    <div class="copyright">
+                        <p class="">© 2022, Made with <span class="">❤️</span> by <a class="" target="_blank"
+                                href="https://shuvoit.com/">Shuvo IT</a></p>
+                    </div>
+                    <div class="copyright">
+                        <p class="">Admin Dashboard</p>
+                    </div>
+                </footer>
+
+
 
             </div>
-            <!-- Footer Part -->
-            <footer class="footer">
-                <div class="copyright">
-                    <p class="">© 2022, Made with <span class="">❤️</span> by <a class="" target="_blank"
-                            href="https://shuvoit.com/">Shuvo IT</a></p>
-                </div>
-                <div class="copyright">
-                    <p class="">Admin Dashboard</p>
-                </div>
-            </footer>
 
         </div>
 
@@ -1036,8 +1239,13 @@
     <script>
         var element = document.querySelector(".sidebar-wrapper");
         var btn = document.querySelector(".myBtn")
+        var closeBtn = document.querySelector(".btn-close");
         btn.addEventListener('click', (e) => {
             element.classList.toggle("isActive");
+
+        });
+        closeBtn.addEventListener('click', (e) => {
+            element.classList.toggle('isActive')
 
         });
     </script>
