@@ -55,10 +55,10 @@
                 <nav class="relative left-0 w-full">
                     <ul class="">
                         <li class="nav-item bg-shuvoit-shadow active">
-                            <i class="fa-solid fa-house-user w-5"></i> <span class=" ml-1">Dashboard</span>
+                            <a href="index.html"><i class="fa-solid fa-house-user w-5"></i> <span class=" ml-1">Dashboard</span></a>
                         </li>
                         <li class="nav-item">
-                            <i class="fa-solid fa-gear w-5"></i> <span class=" ml-1">Account Settings</span>
+                           <a href="account-settings.html"> <i class="fa-solid fa-gear w-5"></i> <span class=" ml-1">Account Settings</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -122,12 +122,18 @@
             </div>
         </div>
 
-        <!-- Humberger Menu Icon -->
+        <!-- Humberger Menu Icon for Small device User -->
+        
         <div class="home-content humberger">
             <i class="fa-solid fa-bars myBtn "></i>
         </div>
 
         <div class="main-content-wrapper w-11/12 xl:w-10/12 2xl:mr-20 xl:ml-12 px-8">
+
+            <!-- -------------------
+                Top Header Start
+            -------------------- -->
+
             <div class="header-nav flex">
                 <div class="search-box w-1/2 py-4 relative">
                     <input type="text" name="search" class="search">
@@ -171,8 +177,18 @@
                 </div>
             </div>
 
-            <!-- Content body -->
+            <!-- -------------------
+                Top Header End
+            -------------------- -->
+
+            <!-- Dashboard Content body -->
+
             <div class="dashboard-content">
+
+            <!-- -------------------
+                Welcome Panel
+            -------------------- -->
+
                 <div class="welcome-panel panel-body bg-image">
                     <div class="card-body">
                         <div class="upper-content">
@@ -185,6 +201,9 @@
                     </div>
                 </div>
 
+            <!-- -------------------
+                Statistics Panel Start
+            -------------------- -->
                 <div class="statistic-panel lg:w-8/12">
                     <div class="card-body">
                         <div class="upper-content upperFlex">
@@ -257,6 +276,10 @@
 
                     </div>
                 </div>
+
+            <!-- -------------------
+                Statistics Panel End
+            -------------------- --> 
 
 
                 <div class="welcome-panel panel-body">
@@ -851,7 +874,7 @@
                         <div class="card-body">
                             <div class="upper-content upperFlex">
                                 <div class="w-full flex justify-between items-center">
-                                    <h6 class="box-heading">Statistics Card</h6>
+                                    <h6 class="box-heading">Deposit</h6>
                                     <p class="second-sub-heading">View All</p>
                                 </div>
                             </div>

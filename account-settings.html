@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuvo IT : Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class=" bg-shuvoit-bg">
+    <div class="root flex justify-between">
+        <div class="sidebar-wrapper wrapper-position hidden xl:block w-1.5/12 xl:w-2/12 py-4 pr-10">
+            <div class="wrapper-humberger">
+                <div class="nav-header flex justify-start px-5">
+                    <svg width="30" height="25" version="1.1" viewBox="0 0 30 23" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Artboard" transform="translate(-95.000000, -51.000000)">
+                                <g id="logo" transform="translate(95.000000, 50.000000)">
+                                    <path id="Combined-Shape" fill="#9155FD"
+                                        d="M30,21.3918362 C30,21.7535219 29.9019196,22.1084381 29.7162004,22.4188007 C29.1490236,23.366632 27.9208668,23.6752135 26.9730355,23.1080366 L26.9730355,23.1080366 L23.714971,21.1584295 C23.1114106,20.7972624 22.7419355,20.1455972 22.7419355,19.4422291 L22.7419355,19.4422291 L22.741,12.7425689 L15,17.1774194 L7.258,12.7425689 L7.25806452,19.4422291 C7.25806452,20.1455972 6.88858935,20.7972624 6.28502902,21.1584295 L3.0269645,23.1080366 C2.07913318,23.6752135 0.850976404,23.366632 0.283799571,22.4188007 C0.0980803893,22.1084381 2.0190442e-15,21.7535219 0,21.3918362 L0,3.58469444 L0.00548573643,3.43543209 L0.00548573643,3.43543209 L0,3.5715689 C3.0881846e-16,2.4669994 0.8954305,1.5715689 2,1.5715689 C2.36889529,1.5715689 2.73060353,1.67359571 3.04512412,1.86636639 L15,9.19354839 L26.9548759,1.86636639 C27.2693965,1.67359571 27.6311047,1.5715689 28,1.5715689 C29.1045695,1.5715689 30,2.4669994 30,3.5715689 L30,3.5715689 Z">
+                                    </path>
+                                    <polygon id="Rectangle" opacity="0.077704" fill="#000"
+                                        points="0 8.58870968 7.25806452 12.7505183 7.25806452 16.8305646"></polygon>
+                                    <polygon id="Rectangle" opacity="0.077704" fill="#000"
+                                        points="0 8.58870968 7.25806452 12.6445567 7.25806452 15.1370162"></polygon>
+                                    <polygon id="Rectangle" opacity="0.077704" fill="#000"
+                                        points="22.7419355 8.58870968 30 12.7417372 30 16.9537453"
+                                        transform="translate(26.370968, 12.771227) scale(-1, 1) translate(-26.370968, -12.771227) ">
+                                    </polygon>
+                                    <polygon id="Rectangle" opacity="0.077704" fill="#000"
+                                        points="22.7419355 8.58870968 30 12.6409734 30 15.2601969"
+                                        transform="translate(26.370968, 11.924453) scale(-1, 1) translate(-26.370968, -11.924453) ">
+                                    </polygon>
+                                    <path id="Rectangle" fill-opacity="0.15" fill="#FFF"
+                                        d="M3.04512412,1.86636639 L15,9.19354839 L15,9.19354839 L15,17.1774194 L0,8.58649679 L0,3.5715689 C3.0881846e-16,2.4669994 0.8954305,1.5715689 2,1.5715689 C2.36889529,1.5715689 2.73060353,1.67359571 3.04512412,1.86636639 Z">
+                                    </path>
+                                    <path id="Rectangle" fill-opacity="0.35" fill="#FFF"
+                                        transform="translate(22.500000, 8.588710) scale(-1, 1) translate(-22.500000, -8.588710) "
+                                        d="M18.0451241,1.86636639 L30,9.19354839 L30,9.19354839 L30,17.1774194 L15,8.58649679 L15,3.5715689 C15,2.4669994 15.8954305,1.5715689 17,1.5715689 C17.3688953,1.5715689 17.7306035,1.67359571 18.0451241,1.86636639 Z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <h6 class="text-xl font-bold text-gray-700 pl-3 uppercase">Materio</h6>
+                    <div class=" hidden home-content">
+                        <i class="fa-solid fa-xmark btn-close"></i>
+                    </div>
+                </div>
+                <nav class="relative left-0 w-full">
+                    <ul class="">
+                        <li class="nav-item">
+                            <a href="index.html"><i class="fa-solid fa-house-user w-5"></i> <span
+                                    class=" ml-1">Dashboard</span></a>
+                        </li>
+                        <li class="nav-item bg-shuvoit-shadow active">
+                            <a href="account-settings.html"> <i class="fa-solid fa-gear w-5"></i> <span
+                                    class=" ml-1">Account Settings</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="pages mt-5">
+                    <span class="w-full h-1 bg-gray-300">
+                        <p class="pl-7 mb-5 text-sm text-gray-400">- &nbsp; PAGES</p>
+                    </span>
+                    <nav class="relative left-0 w-full">
+                        <ul class="">
+                            <li class="page-item">
+                                <i class="fa-solid fa-right-to-bracket w-5"></i> <span class=" ml-1">Login</span>
+                            </li>
+                            <li class="page-item">
+                                <i class="fa-solid fa-user-plus w-5"></i> <span class=" ml-1">Register</span>
+                            </li>
+                            <li class="page-item">
+                                <i class="fa-solid fa-circle-info w-5"></i> <span class=" ml-1">Error</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="user-interfaces mt-5">
+                    <span class="w-full h-1 bg-gray-300">
+                        <p class="pl-7 mb-5 text-sm text-gray-400">- &nbsp; USER INTERFACES</p>
+                    </span>
+                    <nav class="relative left-0 w-full">
+                        <ul class="">
+                            <li class="page-item">
+                                <i class="fa-solid fa-font w-5"></i> <span class=" ml-1">Typography</span>
+                            </li>
+                            <li class="page-item">
+                                <i class="fa-solid fa-icons w-5"></i> <span class=" ml-1">Icons</span>
+                            </li>
+                            <li class="page-item">
+                                <i class="fa-solid fa-address-card w-5"></i> <span class=" ml-1">Cards</span>
+                            </li>
+                            <li class="page-item">
+                                <i class="fa-solid fa-table w-5"></i> <span class=" ml-1">Tables</span>
+                            </li>
+                            <li class="page-item">
+                                <i class="fa-solid fa-circle-info w-5"></i> <span class=" ml-1">Form Layouts</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="user-interfaces h-full mt-5">
+                    <span class="w-full h-1 bg-gray-300">
+                        <p class="pl-7 mb-5 text-sm text-gray-400">- &nbsp; Actions</p>
+                    </span>
+                    <nav class="relative bottom-0 left-0 w-full">
+                        <ul class="">
+                            <li class="page-item">
+                                <i class="fa-solid fa-font w-5"></i> <span class=" ml-1">User Account</span>
+                            </li>
+                            <li class="page-item">
+                                <i class="fa-solid fa-icons w-5"></i> <span class=" ml-1">Logout</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Humberger Menu Icon for Small device User -->
+
+        <div class="home-content humberger">
+            <i class="fa-solid fa-bars myBtn "></i>
+        </div>
+
+        <div class="main-content-wrapper w-11/12 xl:w-10/12 2xl:mr-20 xl:ml-12 px-8">
+
+            <!-- -------------------
+                Top Header Start
+            -------------------- -->
+
+            <div class="header-nav flex">
+                <div class="search-box w-1/2 py-4 relative">
+                    <input type="text" name="search" class="search">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-7 text-gray-400"></i>
+                </div>
+                <div class="status-bar w-1/2 flex justify-end items-center py-4">
+                    <div class="actions-right hidden sm:block">
+                        <a class="" target="_blank" rel="noreferrer"
+                            href="https://github.com/themeselection/materio-mui-react-nextjs-admin-template-free">
+                            <img alt="github stars"
+                                src="https://img.shields.io/github/stars/themeselection/materio-mui-react-nextjs-admin-template-free?style=social"
+                                height="24"></a>
+                    </div>
+                    <button class="mode-changer">
+                        <svg class="w-5 h-5 text-gray-400" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                            data-testid="WeatherNightIcon">
+                            <path
+                                d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="notification">
+                        <svg class="w-5 h-5 text-gray-400" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                            data-testid="BellOutlineIcon">
+                            <path
+                                d="M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="account">
+                        <span class="MuiBadge-root css-1w651zy">
+                            <div class="MuiAvatar-root MuiAvatar-circular css-11rb4o0">
+                                <img alt="John Doe" src="img/icon/user.png" class="w-10 h-10 rounded-full">
+                            </div>
+                            <span
+                                class="w-3 h-3 absolute bg-green-400 rounded-full bottom-0 right-0 border-2 border-white"><span
+                                    class="css-q9emij"></span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------------------
+                Top Header End
+            -------------------- -->
+
+            <!-- Content body -->
+            <div class="dashboard-content">
+                <div class="User-account-panel">
+                    <div class="card-body">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openTab(event, 'account')">
+                                <i class="fa-solid fa-user text-gray-500 pr-2"></i> ACCOUNT
+                            </button>
+                            <button class="tablinks" onclick="openTab(event, 'security')">
+                                <i class="fa-solid fa-lock-open text-gray-500 pr-2"></i>  SECURITY
+                            </button>
+                            <button class="tablinks" onclick="openTab(event, 'info')">
+                                <i class="fa-solid fa-circle-info text-gray-500 pr-2"></i> INFO
+                            </button>
+                        </div>
+
+                        <div id="account" class="tabcontent">
+                            <form action="">
+                                <div class="flex items-center py-8 px-4">
+                                    <div class="user-photo mr-4">
+                                        <img src="img/1.png" class="rounded w-32 h-32" alt="user photo">
+                                    </div>
+                                    <div class="upload-data align-middle">
+                                        <div class="upload-layer">
+                                            <input type="file" class=" bg-purple-700 shadow-sm rounded px-3 py-2 text-white uppercase font-medium cursor-pointer" placeholder="Upload New Photo"> 
+                                            <input type="reset" class="ml-4 px-3 py-2 cursor-pointer border-2 border-purple-500 rounded" value="RESET">
+                                        </div>
+                                        <p class="text-base text-gray-500 font-medium pt-5">Allowed PNG or JPEG. Max size of 800K.</p>
+                                    </div>
+                                </div>
+                                <div class="user-input-data-layer">
+                                    <div class="">
+                                        <div class="">
+                                            <label class="" data-shrink="true" for="mui-6" id="mui-6-label">Username</label>
+                                            <div class="">
+                                                <input aria-invalid="false" placeholder="johnDoe" type="text" class="" value="johnDoe" id="mui-6">
+                                                <fieldset aria-hidden="true" class="">
+                                                    <legend class="">
+                                                        <span>Username</span>
+                                                    </legend>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div id="security" class="tabcontent">
+                            <h3>Paris</h3>
+                            <p>Paris is the capital of France.</p>
+                        </div>
+
+                        <div id="info" class="tabcontent">
+                            <h3>Tokyo</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Footer Part -->
+                <footer class="footer">
+                    <div class="copyright">
+                        <p class="">© 2022, Made with <span class="">❤️</span> by <a class="" target="_blank"
+                                href="https://shuvoit.com/">Shuvo IT</a></p>
+                    </div>
+                    <div class="copyright">
+                        <p class="">Admin Dashboard</p>
+                    </div>
+                </footer>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        var element = document.querySelector(".sidebar-wrapper");
+        var btn = document.querySelector(".myBtn")
+        var closeBtn = document.querySelector(".btn-close");
+        btn.addEventListener('click', (e) => {
+            element.classList.toggle("isActive");
+
+        });
+        closeBtn.addEventListener('click', (e) => {
+            element.classList.toggle('isActive')
+
+        });
+
+        /* Tabs */
+        function openTab(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" activeTab", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " activeTab";
+        }
+    </script>
+
+</body>
+
+</html>
