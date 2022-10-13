@@ -626,6 +626,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -1658,16 +1662,6 @@ Account Settings Page Design
   transition-duration: 150ms;
 }
 
-.tablinks:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 180 0 / var(--tw-bg-opacity));
-}
-
-.tablinks:active {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
-
 .tabcontent {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1779,6 +1773,29 @@ Account Settings Page Design
   padding-left: 0.75rem;
 }
 
+.textarea {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.radio {
+  display: flex;
+  height: 3rem;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 0.25rem;
+  padding-left: 0.75rem;
+}
+
 #cars {
   background: no-repeat;
 }
@@ -1827,10 +1844,10 @@ Account Settings Page Design
   .sidebar-wrapper{
     width: 273px !important;
     height: 100vh;
-    z-index: 12;
     transform: translateX(-100%);
     background-color: #fff;
     transition: transform 0.3s ease-in-out;
+    z-index: 99999;
   }
 
   .isActive .home-content{

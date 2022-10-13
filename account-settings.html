@@ -202,6 +202,10 @@
                             </button>
                         </div>
 
+                        <!-- -----------
+                        Account Tab
+                    ----------- -->
+
                         <div id="account" class="tabcontent">
                             <form action="">
                                 <div class="flex items-center sm:py-8 sm:px-4">
@@ -307,10 +311,10 @@
                                                 </div>
                                             </div>
                                             <div class="w-12 sm:w-1/2 flex justify-end items-start">
-                                                <button class="alert-close hover:bg-gray-100 hover:rounded-full" tabindex="0" type="button"
-                                                    aria-label="close">
-                                                    <svg class="w-6 h-6 text-base fill-orange-400" focusable="false" aria-hidden="true"
-                                                        viewBox="0 0 24 24" data-testid="CloseIcon">
+                                                <button class="alert-close hover:bg-gray-100 hover:rounded-full"
+                                                    tabindex="0" type="button" aria-label="close">
+                                                    <svg class="w-6 h-6 text-base fill-orange-400" focusable="false"
+                                                        aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon">
                                                         <path
                                                             d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
                                                         </path>
@@ -327,10 +331,14 @@
                             </form>
                         </div>
 
+                        <!-- -----------
+                    Confirm Pass Tab
+                    ----------- -->
+
                         <div id="security" class="tabcontent hidden p-4">
-                            <div class="flex flex-col sm:flex-row pt-5 bb-hr">
-                                <div class="pass-change w-full sm:w-1/2">
-                                    <form action="">
+                            <div class=" pt-5 bb-hr">
+                                <form class="flex flex-col sm:flex-row">
+                                    <div class="pass-change w-full sm:w-1/2">
                                         <div class="user-input-data-layer">
                                             <div class="input-body">
                                                 <div class="w-full">
@@ -366,11 +374,11 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-                                <div class="pass-decoration w-full sm:w-1/2 flex justify-center mt-3 sm:mt-0">
-                                    <img src="img/pose-m-1.png" class="w-48 h-64" alt="Photo">
-                                </div>
+                                    </div>
+                                    <div class="pass-decoration w-full sm:w-1/2 flex justify-center mt-3 sm:mt-0">
+                                        <img src="img/pose-m-1.png" class="w-48 h-64" alt="Photo">
+                                    </div>
+                                </form>
                             </div>
                             <div class="block pt-4">
                                 <div class="w-full">
@@ -387,9 +395,8 @@
                                 <div class=" w-full sm:max-w-xs block mx-auto mb-5 sm:my-3 mt-3 sm:mt-0">
                                     <div class="flex justify-center flex-col items-center text-center">
                                         <div class="square-data bg-btn">
-                                            <svg class="w-7 h-7 fill-white"
-                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
-                                                data-testid="LockOpenOutlineIcon">
+                                            <svg class="w-7 h-7 fill-white" focusable="false" aria-hidden="true"
+                                                viewBox="0 0 24 24" data-testid="LockOpenOutlineIcon">
                                                 <path
                                                     d="M18,20V10H6V20H18M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V10A2,2 0 0,1 6,8H15V6A3,3 0 0,0 12,3A3,3 0 0,0 9,6H7A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,17A2,2 0 0,1 10,15A2,2 0 0,1 12,13A2,2 0 0,1 14,15A2,2 0 0,1 12,17Z">
                                                 </path>
@@ -407,12 +414,105 @@
                                     <input type="reset" class="btn-confirm-reset" value="RESET">
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div id="info" class="tabcontent hidden">
-                        <h3>Tokyo</h3>
-                        <p>Tokyo is the capital of Japan.</p>
+                        </div>
+
+                        <!-- -----------
+                        Info Tab
+                    ----------- -->
+
+                        <div id="info" class="tabcontent hidden">
+                            <form action="">
+                                <div class="user-input-data-layer">
+                                    <div class="input-body">
+                                        <div class="w-full">
+                                            <fieldset aria-hidden="true" class="">
+                                                <legend class="legend">
+                                                    <span>Bio</span>
+                                                </legend>
+                                                <textarea class="textarea"
+                                                    placeholder="The name’s John Deo. I am a tireless seeker of knowledge, occasional purveyor of wisdom and also, coincidentally, a graphic designer. Algolia helps businesses across industries quickly create relevant 😎, scalable 😀, and lightning 😍 fast search and discovery experiences."></textarea>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-body">
+                                        <div class="w-full sm:w-1/2">
+                                            <fieldset aria-hidden="true" class="">
+                                                <legend class="legend">
+                                                    <span>Birthdate</span>
+                                                </legend>
+                                                <input placeholder="johnDoe" type="date" class="input" />
+                                            </fieldset>
+                                        </div>
+                                        <div class="w-full sm:w-1/2">
+                                            <fieldset aria-hidden="true" class="">
+                                                <legend class="legend px-3">
+                                                    <span>Phone</span>
+                                                </legend>
+                                                <input placeholder="09-765-2514" type="number" class="input" />
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-body">
+                                        <div class="w-full sm:w-1/2">
+                                            <fieldset aria-hidden="true" class="">
+                                                <legend class="legend">
+                                                    <span>Website</span>
+                                                </legend>
+                                                <input placeholder="Website" type="url" class="input" />
+                                            </fieldset>
+                                        </div>
+                                        <div class="w-full sm:w-1/2">
+                                            <fieldset aria-hidden="true" class="">
+                                                <legend class="legend">
+                                                    <span>Country</span>
+                                                </legend>
+                                                <select name="country" class="input" id="cars">
+                                                    <option value="america">America</option>
+                                                    <option value="russia">Russia</option>
+                                                    <option value="bangladesh">Bangladesh</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="input-body">
+                                        <div class="w-full sm:w-1/2">
+                                            <fieldset aria-hidden="true" class="">
+                                                <legend class="legend">
+                                                    <span>Language</span>
+                                                </legend>
+                                                <select name="country" class="input" id="cars">
+                                                    <option value="">En-US</option>
+                                                    <option value="">En-Uk</option>
+                                                    <option value="">Bn</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="w-full sm:w-1/2">
+                                            <fieldset aria-hidden="true" class="">
+                                                <legend class="legend">
+                                                    <span>Country</span>
+                                                </legend>
+                                                <div class="radio">
+                                                    <input type="radio" id="age1" name="age" value="30">
+                                                    <label for="age1" class="pl-2">Male</label>
+                                                    <input type="radio" id="age2" name="age" value="60" class="ml-2">
+                                                    <label for="age2" class="pl-2">Female</label>
+                                                    <input type="radio" id="age3" name="age" value="100" class="ml-2">
+                                                    <label for="age3" class="pl-2">Other</label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="input-body mt-4">
+                                        <button type="submit" class="btn-account"> Save Changes </button>
+                                        <input type="reset" class="btn-confirm-reset" value="RESET">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

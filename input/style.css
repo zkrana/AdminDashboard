@@ -157,7 +157,7 @@ Account Settings Page Design
 }
 
 .tablinks{
-  @apply float-none border-none outline-none cursor-pointer px-4 py-3 transition text-base text-gray-500 hover:bg-shuvoit-optional active:bg-slate-600;
+  @apply float-none border-none outline-none cursor-pointer px-4 py-3 transition text-base text-gray-500;
 }
 .tabcontent{
   @apply px-3 py-2;
@@ -187,6 +187,12 @@ Account Settings Page Design
 }
 .input{
   @apply w-full flex gap-3 justify-between h-12 border pl-3 rounded;
+}
+.textarea{
+  @apply w-full flex gap-3 justify-between h-20 border pl-3 py-3 rounded;
+}
+.radio{
+  @apply w-full flex justify-start items-center h-12 pl-3 rounded;
 }
 
 #cars {
@@ -243,6 +249,7 @@ Account Settings Page Design
     transform: translateX(-100%);
     background-color: #fff;
     transition: transform 0.3s ease-in-out;
+    z-index: 99999;
   }
   .isActive .home-content{
     display: flex;
