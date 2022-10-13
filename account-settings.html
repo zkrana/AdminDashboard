@@ -219,7 +219,7 @@
                                 </div>
                                 <div class="user-input-data-layer">
                                     <div class="input-body">
-                                        <div class="w-1/2">
+                                        <div class="w-full sm:w-1/2">
                                             <fieldset aria-hidden="true" class="">
                                                 <legend class="legend">
                                                     <span>Username</span>
@@ -228,7 +228,7 @@
                                                     value="john Doe" />
                                             </fieldset>
                                         </div>
-                                        <div class="w-1/2">
+                                        <div class="w-full sm:w-1/2">
                                             <fieldset aria-hidden="true" class="">
                                                 <legend class="legend">
                                                     <span>Name</span>
@@ -240,7 +240,7 @@
                                     </div>
 
                                     <div class="input-body">
-                                        <div class="w-1/2">
+                                        <div class="w-full sm:w-1/2">
                                             <fieldset aria-hidden="true" class="">
                                                 <legend class="legend">
                                                     <span>Email</span>
@@ -249,7 +249,7 @@
                                                     value="john Doe" />
                                             </fieldset>
                                         </div>
-                                        <div class="w-1/2">
+                                        <div class="w-full sm:w-1/2">
                                             <fieldset aria-hidden="true" class="">
                                                 <legend class="legend px-3">
                                                     <span>Role</span>
@@ -266,7 +266,7 @@
                                     </div>
 
                                     <div class="input-body">
-                                        <div class="w-1/2">
+                                        <div class="w-full sm:w-1/2">
                                             <fieldset aria-hidden="true" class="">
                                                 <legend class="legend">
                                                     <span>Status</span>
@@ -278,7 +278,7 @@
                                                 </select>
                                             </fieldset>
                                         </div>
-                                        <div class="w-1/2">
+                                        <div class="w-full sm:w-1/2">
                                             <fieldset aria-hidden="true" class="">
                                                 <legend class="legend">
                                                     <span>Company</span>
@@ -289,9 +289,10 @@
                                     </div>
                                     <div class="input-body mt-4 rounded shadow alertDisplay">
                                         <div class="bg-yellow-100 w-full p-4 flex justify-between" role="alert">
-                                            <div class="w-1/2 flex justify-start items-start">
+                                            <div class="w-full sm:w-1/2 flex justify-start items-start">
                                                 <div class="">
-                                                    <svg class="w-6 h-6 fill-orange-400" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                    <svg class="w-6 h-6 fill-orange-400" focusable="false"
+                                                        aria-hidden="true" viewBox="0 0 24 24"
                                                         data-testid="ReportProblemOutlinedIcon">
                                                         <path
                                                             d="M12 5.99L19.53 19H4.47L12 5.99M12 2L1 21h22L12 2zm1 14h-2v2h2v-2zm0-6h-2v4h2v-4z">
@@ -305,11 +306,11 @@
                                                     <a class="" href="/">Resend Confirmation</a>
                                                 </div>
                                             </div>
-                                            <div class="w-1/2 flex justify-end items-start">
-                                                <button class="alert-close" tabindex="0" type="button" aria-label="close">
-                                                    <svg class="w-6 h-6"
-                                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
-                                                        data-testid="CloseIcon">
+                                            <div class="w-12 sm:w-1/2 flex justify-end items-start">
+                                                <button class="alert-close hover:bg-gray-100 hover:rounded-full" tabindex="0" type="button"
+                                                    aria-label="close">
+                                                    <svg class="w-6 h-6 text-base fill-orange-400" focusable="false" aria-hidden="true"
+                                                        viewBox="0 0 24 24" data-testid="CloseIcon">
                                                         <path
                                                             d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
                                                         </path>
@@ -319,42 +320,120 @@
                                         </div>
                                     </div>
                                     <div class="input-body mt-4">
-                                        <button type="submit" class="btn-customized"> Save Changes </button>
+                                        <button type="submit" class="btn-account"> Save Changes </button>
                                         <input type="reset" class="reset" value="RESET">
                                     </div>
                                 </div>
                             </form>
                         </div>
 
-                        <div id="security" class="tabcontent">
-                            <h3>Paris</h3>
-                            <p>Paris is the capital of France.</p>
+                        <div id="security" class="tabcontent hidden p-4">
+                            <div class="flex flex-col sm:flex-row pt-5 bb-hr">
+                                <div class="pass-change w-full sm:w-1/2">
+                                    <form action="">
+                                        <div class="user-input-data-layer">
+                                            <div class="input-body">
+                                                <div class="w-full">
+                                                    <fieldset aria-hidden="true" class="">
+                                                        <legend class="legend">
+                                                            <span>Current Password</span>
+                                                        </legend>
+                                                        <input placeholder="Current Password" type="password"
+                                                            class="input" />
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <div class="input-body">
+                                                <div class="w-full">
+                                                    <fieldset aria-hidden="true" class="">
+                                                        <legend class="legend">
+                                                            <span>New Password</span>
+                                                        </legend>
+                                                        <input placeholder="New Password" type="password"
+                                                            class="input" />
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <div class="input-body">
+                                                <div class="w-full">
+                                                    <fieldset aria-hidden="true" class="">
+                                                        <legend class="legend">
+                                                            <span>Confirm Password</span>
+                                                        </legend>
+                                                        <input placeholder="Confirm Password" type="password"
+                                                            class="input" />
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="pass-decoration w-full sm:w-1/2 flex justify-center mt-3 sm:mt-0">
+                                    <img src="img/pose-m-1.png" class="w-48 h-64" alt="Photo">
+                                </div>
+                            </div>
+                            <div class="block pt-4">
+                                <div class="w-full">
+                                    <div class="flex items-center">
+                                        <svg class=" w-6 h-6" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="KeyOutlineIcon">
+                                            <path
+                                                d="M21 18H15V15H13.3C12.2 17.4 9.7 19 7 19C3.1 19 0 15.9 0 12S3.1 5 7 5C9.7 5 12.2 6.6 13.3 9H24V15H21V18M17 16H19V13H22V11H11.9L11.7 10.3C11 8.3 9.1 7 7 7C4.2 7 2 9.2 2 12S4.2 17 7 17C9.1 17 11 15.7 11.7 13.7L11.9 13H17V16M7 15C5.3 15 4 13.7 4 12S5.3 9 7 9 10 10.3 10 12 8.7 15 7 15M7 11C6.4 11 6 11.4 6 12S6.4 13 7 13 8 12.6 8 12 7.6 11 7 11Z">
+                                            </path>
+                                        </svg>
+                                        <h6 class="pl-2 box-heading">Two-factor authentication</h6>
+                                    </div>
+                                </div>
+                                <div class=" w-full sm:max-w-xs block mx-auto mb-5 sm:my-3 mt-3 sm:mt-0">
+                                    <div class="flex justify-center flex-col items-center text-center">
+                                        <div class="square-data bg-btn">
+                                            <svg class="w-7 h-7 fill-white"
+                                                focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                data-testid="LockOpenOutlineIcon">
+                                                <path
+                                                    d="M18,20V10H6V20H18M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V10A2,2 0 0,1 6,8H15V6A3,3 0 0,0 12,3A3,3 0 0,0 9,6H7A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,17A2,2 0 0,1 10,15A2,2 0 0,1 12,13A2,2 0 0,1 14,15A2,2 0 0,1 12,17Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <p class="box-heading-st my-4">Two factor
+                                            authentication is not enabled yet.</p>
+                                        <p class="second-sub-heading">Two-factor
+                                            authentication adds an additional layer of security to your account by
+                                            requiring more than just a password to log in. Learn more.</p>
+                                    </div>
+                                </div>
+                                <div class="input-body mt-4">
+                                    <button type="submit" class="btn-account"> Save Changes </button>
+                                    <input type="reset" class="btn-confirm-reset" value="RESET">
+                                </div>
+                            </div>
                         </div>
+                    </div>
 
-                        <div id="info" class="tabcontent">
-                            <h3>Tokyo</h3>
-                            <p>Tokyo is the capital of Japan.</p>
-                        </div>
+                    <div id="info" class="tabcontent hidden">
+                        <h3>Tokyo</h3>
+                        <p>Tokyo is the capital of Japan.</p>
                     </div>
                 </div>
-
-
-                <!-- Footer Part -->
-                <footer class="footer">
-                    <div class="copyright">
-                        <p class="">© 2022, Made with <span class="">❤️</span> by <a class="" target="_blank"
-                                href="https://shuvoit.com/">Shuvo IT</a></p>
-                    </div>
-                    <div class="copyright">
-                        <p class="">Admin Dashboard</p>
-                    </div>
-                </footer>
-
-
-
             </div>
 
+
+            <!-- Footer Part -->
+            <footer class="footer">
+                <div class="copyright">
+                    <p class="">© 2022, Made with <span class="">❤️</span> by <a class="" target="_blank"
+                            href="https://shuvoit.com/">Shuvo IT</a></p>
+                </div>
+                <div class="copyright">
+                    <p class="">Admin Dashboard</p>
+                </div>
+            </footer>
+
+
+
         </div>
+
+    </div>
 
     </div>
 
@@ -373,8 +452,8 @@
             element.classList.toggle('isActive')
 
         });
-        alertBtn.addEventListener('click',(e)=>{
-            alertNone.style.display="none";
+        alertBtn.addEventListener('click', (e) => {
+            alertNone.style.display = "none";
         });
 
         /* Tabs */
