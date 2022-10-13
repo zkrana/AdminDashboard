@@ -189,43 +189,138 @@
                     <div class="card-body">
                         <div class="tab">
                             <button class="tablinks" onclick="openTab(event, 'account')">
-                                <i class="fa-solid fa-user text-gray-500 pr-2"></i> ACCOUNT
+                                <i class="fa-solid fa-user text-gray-500 pr-2"></i> <span
+                                    class="hidden sm:block">ACCOUNT</span>
                             </button>
                             <button class="tablinks" onclick="openTab(event, 'security')">
-                                <i class="fa-solid fa-lock-open text-gray-500 pr-2"></i>  SECURITY
+                                <i class="fa-solid fa-lock-open text-gray-500 pr-2"></i> <span
+                                    class="hidden sm:block">SECURITY</span>
                             </button>
                             <button class="tablinks" onclick="openTab(event, 'info')">
-                                <i class="fa-solid fa-circle-info text-gray-500 pr-2"></i> INFO
+                                <i class="fa-solid fa-circle-info text-gray-500 pr-2"></i> <span
+                                    class="hidden sm:block">INFO</span>
                             </button>
                         </div>
 
                         <div id="account" class="tabcontent">
                             <form action="">
-                                <div class="flex items-center py-8 px-4">
+                                <div class="flex items-center sm:py-8 sm:px-4">
                                     <div class="user-photo mr-4">
-                                        <img src="img/1.png" class="rounded w-32 h-32" alt="user photo">
+                                        <img src="img/1.png" class="rounded sm:w-32 h-32" alt="user photo">
                                     </div>
-                                    <div class="upload-data align-middle">
-                                        <div class="upload-layer">
-                                            <input type="file" class=" bg-purple-700 shadow-sm rounded px-3 py-2 text-white uppercase font-medium cursor-pointer" placeholder="Upload New Photo"> 
-                                            <input type="reset" class="ml-4 px-3 py-2 cursor-pointer border-2 border-purple-500 rounded" value="RESET">
+                                    <div class="upload-data w-80">
+                                        <div class="upload-layer flex flex-col sm:flex-row">
+                                            <input type="file" class="files">
+                                            <input type="reset" class="reset" value="RESET">
                                         </div>
-                                        <p class="text-base text-gray-500 font-medium pt-5">Allowed PNG or JPEG. Max size of 800K.</p>
+                                        <p class=" text-sm sm:text-base text-gray-500 font-medium pt-5">Allowed PNG or
+                                            JPEG. Max size of 800K.</p>
                                     </div>
                                 </div>
                                 <div class="user-input-data-layer">
-                                    <div class="">
-                                        <div class="">
-                                            <label class="" data-shrink="true" for="mui-6" id="mui-6-label">Username</label>
-                                            <div class="">
-                                                <input aria-invalid="false" placeholder="johnDoe" type="text" class="" value="johnDoe" id="mui-6">
-                                                <fieldset aria-hidden="true" class="">
-                                                    <legend class="">
-                                                        <span>Username</span>
-                                                    </legend>
-                                                </fieldset>
+                                    <div class="input-body">
+                                        <div class="w-1/2">
+                                            <fieldset aria-hidden="true" class="">
+                                                <legend class="legend">
+                                                    <span>Username</span>
+                                                </legend>
+                                                <input placeholder="johnDoe" type="text" class="input"
+                                                    value="john Doe" />
+                                            </fieldset>
+                                        </div>
+                                        <div class="w-1/2">
+                                            <fieldset aria-hidden="true" class="">
+                                                <legend class="legend">
+                                                    <span>Name</span>
+                                                </legend>
+                                                <input placeholder="johnDoe" type="text" class="input"
+                                                    value="john Doe" />
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-body">
+                                        <div class="w-1/2">
+                                            <fieldset aria-hidden="true" class="">
+                                                <legend class="legend">
+                                                    <span>Email</span>
+                                                </legend>
+                                                <input placeholder="johnDoe" type="email" class="input"
+                                                    value="john Doe" />
+                                            </fieldset>
+                                        </div>
+                                        <div class="w-1/2">
+                                            <fieldset aria-hidden="true" class="">
+                                                <legend class="legend px-3">
+                                                    <span>Role</span>
+                                                </legend>
+                                                <select name="cars" class="input" id="cars">
+                                                    <option value="volvo">Admin</option>
+                                                    <option value="saab">Author</option>
+                                                    <option value="mercedes">Editor</option>
+                                                    <option value="audi">Maintainer</option>
+                                                    <option value="audi">Subscriber</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-body">
+                                        <div class="w-1/2">
+                                            <fieldset aria-hidden="true" class="">
+                                                <legend class="legend">
+                                                    <span>Status</span>
+                                                </legend>
+                                                <select name="cars" class="input" id="cars">
+                                                    <option value="volvo">Active</option>
+                                                    <option value="saab">Inactive</option>
+                                                    <option value="mercedes">Pending</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="w-1/2">
+                                            <fieldset aria-hidden="true" class="">
+                                                <legend class="legend">
+                                                    <span>Company</span>
+                                                </legend>
+                                                <input placeholder="ABC Pvt. Ltd." type="text" class="input" />
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="input-body mt-4 rounded shadow alertDisplay">
+                                        <div class="bg-yellow-100 opacity-5 w-full p-4 flex justify-between" role="alert">
+                                            <div class="w-1/2 flex justify-start items-start">
+                                                <div class="">
+                                                    <svg class="w-6 h-6 fill-orange-400" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                        data-testid="ReportProblemOutlinedIcon">
+                                                        <path
+                                                            d="M12 5.99L19.53 19H4.47L12 5.99M12 2L1 21h22L12 2zm1 14h-2v2h2v-2zm0-6h-2v4h2v-4z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <div class="pl-4 text-orange-400">
+                                                    <div class="">
+                                                        Your email is not confirmed. Please check your inbox.
+                                                    </div>
+                                                    <a class="" href="/">Resend Confirmation</a>
+                                                </div>
+                                            </div>
+                                            <div class="w-1/2 flex justify-end items-start">
+                                                <button class="alert-close" tabindex="0" type="button" aria-label="close">
+                                                    <svg class="w-6 h-6"
+                                                        focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                        data-testid="CloseIcon">
+                                                        <path
+                                                            d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="input-body mt-4">
+                                        <button type="submit" class="btn-customized"> Save Changes </button>
+                                        <input type="reset" class="reset" value="RESET">
                                     </div>
                                 </div>
                             </form>
@@ -268,6 +363,8 @@
         var element = document.querySelector(".sidebar-wrapper");
         var btn = document.querySelector(".myBtn")
         var closeBtn = document.querySelector(".btn-close");
+        var alertNone = document.querySelector(".alertDisplay");
+        var alertBtn = document.querySelector(".alert-close");
         btn.addEventListener('click', (e) => {
             element.classList.toggle("isActive");
 
@@ -275,6 +372,9 @@
         closeBtn.addEventListener('click', (e) => {
             element.classList.toggle('isActive')
 
+        });
+        alertBtn.addEventListener('click',(e)=>{
+            alertNone.style.display="none";
         });
 
         /* Tabs */

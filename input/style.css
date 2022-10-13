@@ -164,12 +164,38 @@ Account Settings Page Design
 }
 
 .activeTab {
-  color: purple;
+  color: #9155FD;
   border-bottom: 2px solid #9155FD;
 }
  .activeTab i{
-  color: purple;
+  color: #9155FD;
 }
+.files{
+  @apply bg-purple-700 px-4 py-3 shadow-sm rounded w-full  text-white font-medium cursor-pointer;
+}
+.input-body{
+  @apply w-full flex gap-4;
+}
+.reset{
+  @apply mt-3 sm:mt-0 sm:ml-4 px-3 py-2 cursor-pointer border-2 border-purple-500 rounded;
+}
+.input{
+  @apply w-full flex gap-3 justify-between h-12 border pl-3 rounded;
+}
+
+#cars {
+  background: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Footer Section */
 .footer{
@@ -293,3 +319,13 @@ Account Settings Page Design
   }
 }
 
+
+/* Account Settings User form */
+.legend {
+  position: relative;
+  bottom: -11px;
+  left: 10px;
+  z-index: 12;
+  background-color: #fff;
+  border-radius: 4px;
+}
