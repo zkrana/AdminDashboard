@@ -344,3 +344,49 @@ Account Settings Page Design
   background-color: #fff;
   border-radius: 4px;
 }
+
+/* Login page header */
+.login-header{
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  color: rgba(58, 53, 65, 0.68);
+}
+
+.horizental{
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
+  border: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  
+}
+.horizental::before {
+  width: 100%;
+  border-top: thin solid rgba(58, 53, 65, 0.12);
+  top: 50%;
+  content: "";
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+.or{
+  white-space: nowrap;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  transform: translate(-42%, -50%);
+}
+
+.filled{
+  fill: #1DA1F2;
+}
+.punch{
+  fill: #db4437;
+}

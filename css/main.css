@@ -602,6 +602,16 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -640,6 +650,10 @@ video {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .block {
@@ -722,6 +736,10 @@ video {
   height: 3rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-1 {
   width: 0.25rem;
 }
@@ -798,6 +816,10 @@ video {
   min-width: 100%;
 }
 
+.max-w-xl {
+  max-width: 36rem;
+}
+
 .table-auto {
   table-layout: auto;
 }
@@ -844,6 +866,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .overflow-hidden {
@@ -937,8 +963,20 @@ video {
   fill: #56CA00;
 }
 
+.fill-blue-500 {
+  fill: #3b82f6;
+}
+
+.fill-black {
+  fill: #000;
+}
+
 .p-4 {
   padding: 1rem;
+}
+
+.p-7 {
+  padding: 1.75rem;
 }
 
 .py-4 {
@@ -1074,6 +1112,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1126,9 +1169,20 @@ video {
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
+.text-btn {
+  --tw-text-opacity: 1;
+  color: rgb(145 85 253 / var(--tw-text-opacity));
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1949,6 +2003,52 @@ Account Settings Page Design
   z-index: 12;
   background-color: #fff;
   border-radius: 4px;
+}
+
+/* Login page header */
+
+.login-header{
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  color: rgba(58, 53, 65, 0.68);
+}
+
+.horizental{
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
+  border: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.horizental::before {
+  width: 100%;
+  border-top: thin solid rgba(58, 53, 65, 0.12);
+  top: 50%;
+  content: "";
+  transform: translateY(50%);
+}
+
+.or{
+  white-space: nowrap;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  transform: translate(-42%, -50%);
+}
+
+.filled{
+  fill: #1DA1F2;
+}
+
+.punch{
+  fill: #db4437;
 }
 
 .hover\:rounded-full:hover {
