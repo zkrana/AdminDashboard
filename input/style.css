@@ -212,6 +212,10 @@ Account Settings Page Design
   @apply flex justify-center items-center h-screen sm:h-fit bg-white rounded shadow-lg p-7 z-10;
 }
 
+.social-icon-item{
+  @apply w-8 h-8 flex justify-center items-center hover:bg-gray-200 hover:rounded-full;
+}
+
 
 
 
