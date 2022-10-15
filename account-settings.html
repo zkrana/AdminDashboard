@@ -116,7 +116,7 @@
                                 <i class="fa-solid fa-font w-5"></i> <span class=" ml-1">User Account</span>
                             </li>
                             <li class="page-item">
-                                <i class="fa-solid fa-icons w-5"></i> <span class=" ml-1">Logout</span>
+                                <i class="fa-solid fa-right-from-bracket w-5"></i> <span class=" ml-1">Logout</span>
                             </li>
                         </ul>
                     </nav>
@@ -136,7 +136,7 @@
                 Top Header Start
             -------------------- -->
 
-            <div class="header-nav flex">
+            <div class="header-nav flex relative">
                 <div class="search-box w-1/2 py-4 relative">
                     <input type="text" name="search" class="search">
                     <i class="fa-solid fa-magnifying-glass absolute left-3 top-7 text-gray-400"></i>
@@ -165,9 +165,9 @@
                             </path>
                         </svg>
                     </button>
-                    <div class="account">
-                        <span class="MuiBadge-root css-1w651zy">
-                            <div class="MuiAvatar-root MuiAvatar-circular css-11rb4o0">
+                    <div class="account transition-all relative" id="profile">
+                        <span class="">
+                            <div class="">
                                 <img alt="John Doe" src="img/icon/user.png" class="w-10 h-10 rounded-full">
                             </div>
                             <span
@@ -176,6 +176,67 @@
                             </span>
                         </span>
                     </div>
+                    <!-- -------------------
+                        User Profile
+                    -------------------- -->
+                    <div class="profileShow hidden transition-all">
+                        <div class="photo-card flex justify-start items-center">
+                            <div class="userPhoto-box relative">
+                                <div class="w-10 h-10">
+                                    <img alt="John Doe" src="img/icon/user.png" class="rounded-full">
+                                </div>
+                                <span
+                                    class="w-3 h-3 absolute bg-green-400 rounded-full bottom-1 right-0 border-2 border-white"><span
+                                        class="css-q9emij"></span>
+                                </span>
+                            </div>
+                            <div class="user-header-name pl-2">
+                                <p class="box-heading">John Doe</p>
+                                <p class="second-sub-heading">Admin</p>
+                            </div>
+                        </div>
+                        <nav class="w-full my-3 absolute left-0 right-0 bottom-0 top-16">
+                            <ul class="">
+                                <li class="profile-item">
+                                    <a class="profile-link" href="#"><i class="fa-solid fa-user w-5 "></i> <span
+                                            class="ml-1">Profile</span></a>
+                                </li>
+                                <li class="profile-item">
+                                    <a class="profile-link" href="#"> <i class="fa-solid fa-envelope w-5"></i> <span
+                                            class="ml-1">Inbox</span></a>
+                                </li>
+                                <li class="profile-item mb-2">
+                                    <a class="profile-link" href="#"><i class="fa-solid fa-comment-medical w-5"></i> <span
+                                            class="ml-1">Chat</span></a>
+                                </li>
+                                <li>
+                                    <hr>
+                                </li>
+                                <li class="profile-item mt-2">
+                                    <a class="profile-link" href="#"><i class="fa-solid fa-gear w-5"></i> <span
+                                            class="ml-1">Settings</span></a>
+                                </li>
+                                <li class="profile-item">
+                                    <a class="profile-link" href="#"><i class="fa-solid fa-dollar-sign w-5"></i> <span
+                                            class="ml-1">Pricing</span></a>
+                                </li>
+                                <li class="profile-item mb-2">
+                                    <a class="profile-link" href="#"><i class="fa-solid fa-circle-info w-5"></i> <span
+                                            class="ml-1">Faq</span></a>
+                                </li>
+                                <li>
+                                    <hr>
+                                </li>
+                                <li class="profile-item mt-2 pb-2">
+                                    <a class="profile-link" href="#"><i class="fa-solid fa-right-from-bracket w-5"></i> <span
+                                            class="ml-1">Logout</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- -------------------
+                        User Profile
+                    -------------------- -->
                 </div>
             </div>
 
@@ -544,6 +605,12 @@
         var closeBtn = document.querySelector(".btn-close");
         var alertNone = document.querySelector(".alertDisplay");
         var alertBtn = document.querySelector(".alert-close");
+        var profileSwitch = document.querySelector("#profile");
+        var ppShowd = document.querySelector(".profileShow");
+
+        alertBtn.addEventListener('click', (e) => {
+            alertNone.style.display = "none";
+        });
         btn.addEventListener('click', (e) => {
             element.classList.toggle("isActive");
 
@@ -552,9 +619,10 @@
             element.classList.toggle('isActive')
 
         });
-        alertBtn.addEventListener('click', (e) => {
-            alertNone.style.display = "none";
+        profileSwitch.addEventListener('click', (e) => {
+            ppShowd.classList.toggle("profile-card");
         });
+       
 
         /* Tabs */
         function openTab(evt, cityName) {
