@@ -202,10 +202,15 @@ Account Settings Page Design
   border-bottom: 1px solid #eaeaea; 
 }
 
-
-
-
-
+/* Login Page */
+.login-panel{
+  width: 490px;
+  @apply flex justify-center items-center h-screen sm:h-fit bg-white rounded shadow-lg p-7 z-10;
+}
+.reg-panel{
+  width: 490px;
+  @apply flex justify-center items-center h-screen sm:h-fit bg-white rounded shadow-lg p-7 z-10;
+}
 
 
 
