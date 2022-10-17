@@ -217,6 +217,11 @@ Account Settings Page Design
 }
 
 
+/* Product Upload Page */
+.product-heading{
+  @apply text-gray-500 text-base;
+}
+
 /* User Account Popup */
 .profile-card{
   height: 400px;
@@ -410,4 +415,10 @@ Account Settings Page Design
 }
 .punch{
   fill: #db4437;
+}
+
+/* Product upload page */
+
+.h-250{
+  height: 250px !important;
 }
