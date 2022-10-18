@@ -221,7 +221,15 @@ Account Settings Page Design
 .product-heading{
   @apply text-gray-500 text-base;
 }
-
+.page-navigation-layer{
+  @apply  w-full flex justify-between p-4 bg-white rounded shadow-lg;
+}
+.page-title-layer{
+  @apply w-full bg-white rounded shadow-lg p-4;
+}
+.page-action{
+  @apply w-full sm:w-80 block bg-white rounded shadow-lg p-4;
+}
 /* User Account Popup */
 .profile-card{
   height: 400px;
