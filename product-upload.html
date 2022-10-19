@@ -136,7 +136,7 @@
             <i class="fa-solid fa-bars myBtn "></i>
         </div>
 
-        <div class="main-content-wrapper w-11/12 xl:w-10/12 2xl:mr-20 xl:ml-12 px-8">
+        <div class="main-content-wrapper  sm:w-11/12 xl:w-10/12 2xl:mr-20 xl:ml-12 pr-8 sm:px-8">
 
             <!-- -------------------
                 Top Header Start
@@ -252,7 +252,7 @@
             -------------------- -->
 
             <!-- Content body -->
-            <div class="dashboard-content p-4">
+            <div class="dashboard-content sm:p-4">
                 <div class="page-navigation-layer">
                     <div class="page-previous">
                         <a href="#"> <i class="fa-solid fa-less-than product-heading"></i> <span
@@ -374,8 +374,8 @@
                             <div class="mb-5">
                                 <div class="product-type w-full block my-3">
                                     <input type="text" class="input" placeholder="Cloths, Women Cloths">
-                                    <p class="bg-gray-400 text-gray-700 w-28 h-10 mt-2 flex items-center justify-center rounded cursor-pointer relative">
-                                        Men <i class="fa-solid fa-xmark absolute right-3 text-gray-500"></i>
+                                    <p id="tags" class="bg-gray-400 text-gray-700 w-28 h-10 mt-2 flex items-center justify-center rounded cursor-pointer relative">
+                                        Men <i class="fa-solid fa-xmark absolute right-3 text-gray-500 " id="alert-close"></i>
                                     </p>
                                 </div>
                             </div>
@@ -408,9 +408,17 @@
 
 
     <script>
+
+
         var element = document.querySelector(".sidebar-wrapper");
         var btn = document.querySelector(".myBtn")
         var closeBtn = document.querySelector(".btn-close");
+        var closeTag = document.querySelector("#tags");
+        var alertBtn = document.querySelector("#alert-close");
+        /* Product Tag */
+        alertBtn.addEventListener('click', (e) => {
+            closeTag.style.display = "none";
+        });
         /* Trigger */
         var profileSwitch = document.querySelector("#profile");
         /* popup */
