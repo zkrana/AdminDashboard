@@ -225,10 +225,10 @@ Account Settings Page Design
   @apply  w-full flex justify-between p-4 bg-white rounded shadow-lg;
 }
 .page-title-layer{
-  @apply w-full bg-white rounded shadow-lg p-4;
+  @apply w-full flex justify-between items-center;
 }
 .page-action{
-  @apply w-full sm:w-80 block bg-white rounded shadow-lg p-4;
+  @apply w-full sm:w-80 block  p-4;
 }
 
 /* All Product page */
